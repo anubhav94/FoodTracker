@@ -33,4 +33,10 @@ class FoodTrackerTests: XCTestCase {
         }
     }
     
+    // MARK: Alarm Tests
+    func testAlarmInitialization() {
+        let potentialAlarm = Alarm(name: "Test", time: NSDate())
+        XCTAssertNotNil(potentialAlarm);
+    }
+    
 }
